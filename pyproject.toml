@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "test-w3school"
+version = "0.1.0"
+description = ""
+authors = ["mchuvikin <mihom87@gmailcom>"]
+readme = "README.md"
+packages = [{include = "test_w3school"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.12.0"
+allure-pytest = "^2.13.2"
+webdriver-manager = "^4.0.0"
+pytest-assume = "^2.4.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
