@@ -1,6 +1,5 @@
 from ext_selenium.common import BasePage
 import allure
-from utils.checkers import common_assert
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -16,6 +15,7 @@ class SqlEditor(BasePage):
     @allure.step(f'Navigate to page {url}')
     def navigate(self) -> None:
         self.instance.get(self.url)
+
 
     @property
     def accept_cookies_button(self) -> BaseElement:

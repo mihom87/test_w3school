@@ -1,6 +1,3 @@
-from selenium.webdriver.common.by import By
-
-
 def test_entry_amount_by_city(sql_editor_page):
     """Вывести только те строки таблицы Customers, где city='London'.
        Проверить, что в таблице ровно 6 записей
