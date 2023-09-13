@@ -14,16 +14,16 @@
 1. clone repo
 2. Install required libraries. In project root perform:
 ```sh
-poetry install
+poetry install --no-root
 ```
 
 ### Running tests
 #### Locally
 1. In project root perform
 ```sh
-poetry run pytest --color=yes --alluredir=./tmp/allure_results "TEST DIRECTORY"
+poetry run pytest --color=yes --alluredir=./tmp/allure_results TEST_DIRECTORY
 ```
-`TEST DIRECTORY` - path to tests you gonna run (e.g. `./tests` to run all tests in project)
+`TEST_DIRECTORY` - path to tests you gonna run (e.g. `./tests` to run all tests in project)
 
 To serve allure reports after run locally please do the following. The report will be opened automatically in the browser.
 ```sh
