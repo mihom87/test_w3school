@@ -23,20 +23,8 @@ class BaseElement:
     def find_element_by_xpath(self, xpath_expression):
         return BaseElement(self.instance.find_element(By.XPATH, xpath_expression))
 
-    # def check(self, element):
-
 
 class BasePage(BaseElement):
     def __init__(self, driver):
         super().__init__(driver)
-
-
-
-
-
-
-
-
-
-
 
