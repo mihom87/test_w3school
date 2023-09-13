@@ -1,7 +1,6 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.remote.webelement import WebElement
 import allure
-from utils.checkers import common_assert
+
 
 
 class BaseElement:
